@@ -203,6 +203,26 @@ const PLANTS=[{min:0,n:'semilla',e:'🌱'},{min:3,n:'brote',e:'🌿'},{min:7,n:'
 
 document.addEventListener('DOMContentLoaded',init);
 
+// Bloquear automáticamente cuando se sale de la app o cambia de pestaña
+document.addEventListener('visibilitychange', function() {
+    if (document.hidden) {
+        // Cuando la app pierde el foco, cerrar sesión
+        localStorage.removeItem(SK);
+    }
+});
+
+window.addEventListener('blur', function() {
+    localStorage.removeItem(SK);
+});
+
+window.addEventListener('pagehide', function() {
+    localStorage.removeItem(SK);
+});
+
+window.addEventListener('beforeunload', function() {
+    localStorage.removeItem(SK);
+});
+
 function init(){createDots();setupEvents();checkSession()}
 
 function checkSession(){
