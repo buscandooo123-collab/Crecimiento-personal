@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="plant" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#16a34a"/>
+      <stop offset="100%" style="stop-color:#22c55e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#f97316"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="100" fill="url(#bg)"/>
+  
+  <!-- Pot -->
+  <path d="M180 380 L200 320 L312 320 L332 380 Z" fill="url(#accent)"/>
+  <ellipse cx="256" cy="320" rx="60" ry="12" fill="#d97706"/>
+  
+  <!-- Stem -->
+  <path d="M256 320 Q256 280 256 240" stroke="url(#plant)" stroke-width="12" fill="none" stroke-linecap="round"/>
+  
+  <!-- Main leaf -->
+  <path d="M256 200 Q220 160 200 180 Q180 200 200 240 Q220 260 256 240" fill="url(#plant)"/>
+  <path d="M256 200 Q292 160 312 180 Q332 200 312 240 Q292 260 256 240" fill="url(#plant)"/>
+  
+  <!-- Small leaves -->
+  <path d="M256 260 Q230 240 220 250 Q210 260 220 280 Q230 290 256 280" fill="#16a34a"/>
+  <path d="M256 260 Q282 240 292 250 Q302 260 292 280 Q282 290 256 280" fill="#16a34a"/>
+  
+  <!-- Sparkle -->
+  <circle cx="320" cy="160" r="8" fill="#fbbf24"/>
+  <circle cx="340" cy="180" r="5" fill="#fbbf24" opacity="0.7"/>
+  <circle cx="180" cy="180" r="6" fill="#fbbf24" opacity="0.8"/>
+</svg>
