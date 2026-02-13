@@ -1,18 +1,9 @@
 {
   "short_name": "MiCrecimiento",
   "name": "Mi Crecimiento Personal Tracker",
-  "description": "Seguimiento de metas y crecimiento personal",
-  "id": "com.micrecimiento.personal.tracker.app.2024",
+  "id": "com.micrecimiento.personal.tracker.2024",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#0f172a",
-  "background_color": "#0f172a",
-  "orientation": "portrait",
-  "icons": [
-    {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230f172a' width='100' height='100' rx='20'/><text y='65' x='50' text-anchor='middle' font-size='50'>🌱</text></svg>",
-      "sizes": "192x192",
-      "type": "image/svg+xml"
-    }
-  ]
+  "background_color": "#0f172a"
 }
